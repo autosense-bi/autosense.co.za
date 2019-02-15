@@ -1,0 +1,5 @@
+Primary: 3d95e5
+Secondary: 0B4FC7
+Tertiary: ABC7F0
+
+Glow: 47DDE1

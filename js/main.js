@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
   // Header fixed and Back to top button
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > $(window).height()-85) {
       $('.back-to-top').fadeIn('slow');
       $('#header').addClass('header-fixed');
     } else {
@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
     }
   });
 
-  if ($(this).scrollTop() > 100) {
+  if ($(this).scrollTop() > $(window).height()-85) {
     $('.back-to-top').fadeIn('slow');
     $('#header').addClass('header-fixed');
   }
@@ -23,8 +23,7 @@ jQuery(document).ready(function($) {
     return false;
   });
 
-  // Initiate the wowjs animation library
-  new WOW().init();
+  
 
   // Initiate superfish on nav menu
   $('.nav-menu').superfish({
@@ -127,5 +126,63 @@ jQuery(document).ready(function($) {
   });
 
   // custom code
+  //hide brand image when at the top
+  $(document).ready(function () {
+    console.log("initilising");
+    $("#header-logo").hide();    
+    $("#nav-menu-container").css({'display':'table','margin':'0 auto','float':'none'});
+    // $("#nav-menu-container").removeAttr("style");
+  });
+  $(function() {
+    
+    $(window).scroll(function() {
+      var x = $(window).scrollTop();
+      if (x >= $(window).height()-84) {
+        $("#header-logo").fadeIn();
+        $("#nav-menu-container").removeAttr("style");
+        $("#nav-menu-container").css({'background-color':'transparent'});
+        $("#header").css({'background-color':'transparent'});
+        // $("#header").css({'background-color':'#BCCDE2'});
+      }else if (x <= 3){
+        $("#nav-menu-container").css({'display':'table','margin':'0 auto','float':'none', 'background-color':'transparent'});
+        $("#header").css({'background-color':'transparent'});
+        $("#header-logo").fadeOut();
+      } else if (x >3 && x < $(window).height()-84){
+        $("#nav-menu-container").css({'display':'table','margin':'0 auto','float':'none','background-color':'#BCCDE2'});
+        $("#header").css({'background-color':'transparent'});
+        // $("#header").css({'background-color':'#BCCDE2'});
+        $("#header-logo").fadeOut();
+      } else {
+        $("#header-logo").fadeOut();
+        $("#nav-menu-container").css({'display':'table','margin':'0 auto','float':'none', 'background-color':'transparent'});
+      }
+    });
+  });
 
+});
+
+/*
+    Carousel
+*/
+$('#carousel-example').on('slide.bs.carousel', function (e) {
+  /*
+      CC 2.0 License Iatek LLC 2018 - Attribution required
+  */
+  var $e = $(e.relatedTarget);
+  var idx = $e.index();
+  var itemsPerSlide = 5;
+  var totalItems = $('.carousel-item').length;
+
+  if (idx >= totalItems-(itemsPerSlide-1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i=0; i<it; i++) {
+          // append slides to end
+          if (e.direction=="left") {
+              $('.carousel-item').eq(i).appendTo('.carousel-inner');
+          }
+          else {
+              $('.carousel-item').eq(0).appendTo('.carousel-inner');
+          }
+      }
+  }
 });

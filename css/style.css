@@ -12,6 +12,7 @@ body {
   color: #666666;
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
+  text-align: justify;
 }
 
 a {
@@ -30,8 +31,10 @@ p {
   margin: 0 0 30px 0;
 }
 
+
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -41,7 +44,8 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: linear-gradient(45deg, #0B4FC7, #5c9cd6);
+  background: #3e678e;
+  /* background: linear-gradient(45deg, #0B4FC7, #5c9cd6); */
   color: #fff;
   padding: 2px 20px 8px 20px;
   font-size: 16px;
@@ -52,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:focus {
-  background: linear-gradient(45deg, #0B4FC7, #5c9cd6);
+  background: linear-gradient(45deg, #4e81b1, #4e81b1);
   color: #fff;
   outline: none;
 }
@@ -68,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   padding: 30px 0;
   height: 92px;
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   right: 0;
@@ -86,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   line-height: 1;
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -112,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-fixed {
-  background: linear-gradient(45deg, #0B4FC7, #5c9cd6);
+  background: linear-gradient(45deg, #BCCDE2, #BCCDE2);
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
@@ -124,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 #intro {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, rgb(11, 79, 199, 0.8), rgb(92, 156, 214, 0.8)), url("../img/intro-bg.jpg") center top no-repeat;
+  background: linear-gradient(45deg, rgba(176, 196, 222, 0.8), rgb(176, 196, 222, 0.8)), url("../img/intro-bg.jpg") center top no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -168,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   margin-bottom: 20px;
   padding: 0 15px;
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 
 @media (max-width: 768px) {
@@ -180,7 +184,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .btn-get-started {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 1px;
@@ -245,6 +249,16 @@ h1, h2, h3, h4, h5, h6 {
   #intro .product-screens .product-screen-2, #intro .product-screens .product-screen-3 {
     display: none;
   }
+}
+
+.intro-words{
+  margin-top: 80px;
+  transform: rotate(0deg);
+  font-style: italic;
+  font-size: 50px;
+}
+.intro-words >p{
+  text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------
@@ -324,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   display: inline-block;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   font-weight: 400;
   font-size: 14px;
   outline: none;
@@ -482,12 +496,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 32px;
   color: #111;
   text-align: center;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .section-header .section-description {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 15px;
   color: #777;
   font-style: italic;
 }
@@ -502,10 +516,26 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
+hr {
+  width: 100px;
+  border-bottom: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #5c9cd6;
+  margin-bottom: 40px;
+}
+
+.white-hr{
+  width: 400px;
+  border-bottom: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: white;
+  margin-bottom: 40px;
+}
+
 /* Section with background
 --------------------------------*/
 .section-bg {
-  background: #eff5f5;
+  background: #edf2f7;
 }
 
 /* About Us Section
@@ -516,12 +546,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-img {
-  height: 510px;
+  /* height: 480px; */
   overflow: hidden;
 }
 
 #about .about-img img {
-  margin-left: -15px;
+  /* margin-left: -15px; */
   max-width: 100%;
 }
 
@@ -575,7 +605,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Product Featuress Section
 --------------------------------*/
 #features {
-  background: #fff;
+  /* background: #fff; */
   padding: 60px 0 0 0;
   overflow: hidden;
 }
@@ -583,12 +613,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 #features .features-img {
   text-align: center;
   padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 @media (min-width: 769px) {
   #features .features-img {
-    padding-top: 120px;
-    margin-top: -200px;
+    /* padding-top: 120px; */
+    /* margin-top: -100px; */
+     
   }
 }
 
@@ -613,7 +645,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #features .icon i:before {
   background: #5c9cd6;
-  background: linear-gradient(45deg, #5c9cd6 0%, #55fabe 100%);
+  /* background: linear-gradient(45deg, #5c9cd6 0%, #55fabe 100%); */
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -630,7 +662,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #features .description {
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 24px;
   margin-bottom: 10px;
 }
@@ -680,7 +712,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #advanced-features i:before {
   background: #5c9cd6;
-  background: linear-gradient(45deg, #5c9cd6 0%, #55fabe 100%);
+  /* background: linear-gradient(45deg, #5c9cd6 0%, #55fabe 100%); */
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -693,9 +725,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #advanced-features .advanced-feature-img-left {
-  max-width: 100%;
+  width: 100%;
   float: left;
-  padding: 0 30px 30px 0;
+  /* padding: 0 30px 30px 0; */
 }
 
 @media (max-width: 768px) {
@@ -716,7 +748,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #call-to-action {
   overflow: hidden;
-  background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(../img/call-to-action-bg.jpg) fixed center center;
+  background-color: #3e678e;
   background-size: cover;
   padding: 80px 0;
 }
@@ -740,7 +772,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -786,14 +818,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #more-features .icon i:before {
   background: #5c9cd6;
-  background: linear-gradient(45deg, #5c9cd6 0%, #55fabe 100%);
+  /* background: linear-gradient(45deg, #5c9cd6 0%, #55fabe 100%); */
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #more-features h4 {
-  margin-left: 100px;
+  /* margin-left: 100px; */
+  text-align: center;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
@@ -804,8 +837,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #more-features p {
-  font-size: 14px;
-  margin-left: 100px;
+  /* font-size: 14px; */
+  /* margin-left: 100px; */
   margin-bottom: 0;
   line-height: 24px;
 }
@@ -825,11 +858,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+.client-block{
+  min-height: 370px;
+}
+
 /* Clients Section
 --------------------------------*/
 #clients {
   padding: 30px 0;
-  background: #fff;
+  /* background: #fff; */
   overflow: hidden;
 }
 
@@ -842,6 +879,68 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #clients img:hover {
   opacity: 1;
+}
+
+.flip-card-back > .description{
+  color:black;
+}
+
+.flip-card-back > .description:hover{
+  color:#1565C0;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  /* width: 300px;
+  height: 200px; */
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 330px;
+  /* text-align: center; */
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  padding-top: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15); 
+  background-color: white;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /* box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);  */
+  background-color: white;
+  color: black;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  text-align: center;
+  height:100%;
+  overflow:auto;
+  filter: grayscale(100%);
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+  padding-left:40px;
+  padding-right:40px;
 }
 
 /* Pricing Section
@@ -908,7 +1007,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
 }
 
 #pricing .featured {
@@ -939,7 +1038,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 18px 0;
   display: block;
   position: relative;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   font-size: 22px;
   line-height: 1;
   font-weight: 300;
@@ -1091,7 +1190,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 0 10px 0;
   padding: 0;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -1099,9 +1198,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .contact-about p {
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 24px;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   color: #888;
 }
 
@@ -1185,15 +1284,27 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
 }
 
-#contact .form button[type="submit"] {
-  background: linear-gradient(45deg, #0B4FC7, #5c9cd6);
-  border: 0;
+#contact .form button[type="submit"], .btn-round-outline {
+  /* background: linear-gradient(45deg, #0B4FC7, #5c9cd6); */
+  background-color: white;
+  border: 2px solid #5c9cd6;
   border-radius: 20px;
   padding: 8px 30px;
-  color: #fff;
+  color: #5c9cd6;
+  float:right;
 }
 
-#contact .form button[type="submit"]:hover {
+#contact .form button[type="submit"]:hover, .btn-round-outline:hover {
+  /* background: linear-gradient(45deg, #0B4FC7, #5c9cd6); */
+  background-color: #5c9cd6;
+  border: 2px solid #5c9cd6;
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: white;
+  float:right;
+}
+
+#contact .form button[type="submit"]:hover, .btn-round-outline:hover {
   cursor: pointer;
 }
 
@@ -1282,3 +1393,145 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: 75px;
   font-size: 30px;
 }
+
+@media(max-width:350px){
+  #logo{
+    max-width:290px;
+    
+  }
+
+  .img-partner{
+    width:240px !important;
+    height:280px;
+  }
+}
+
+/* @media(min-width:350px){
+  #logo{
+    height:150px;
+    
+  }
+} */
+
+.card-text{
+  text-align: left !important;
+}
+@media (min-width: 992px){
+  .card{
+    /* height:100%; */
+    height: 400px;
+    border-radius: 0;
+  }
+  
+  .card-body{
+    height:154px;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 576px){
+  .card, .card-body{
+    text-align: left !important;
+  }
+
+  .card-footer{
+    height:95px;
+  }
+
+  .card{
+    /* height:100%; */
+    min-height: 645px;
+    border-radius: 0;
+  }
+  
+  .card-body{
+    height:491px;
+  }
+}
+
+@media (max-width: 576px){
+  .card-footer{
+    height:65px;
+  }
+}
+
+.card-image > img{
+  height:140px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  width:100%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width:5%;
+}
+
+#icon{
+  background-color: #3e678e;
+  color:white;
+  padding: 60px 0;
+}
+#icon > .container>.section-header>.section-title{
+  color:white;
+}
+.icon{
+  color: white;
+  font-size: 40px;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+
+.icon-line{
+  color:white;
+  font-size: 40px;
+  border-color: white;
+  width: 45px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+.icon-spin{
+  font-size: 48px;
+  margin-bottom: 0px;
+}
+
+/*
+tinting images
+*/
+
+.image-tint {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: calc(100% - 30px);
+  background: rgba(176, 196, 222, 0.42);
+  /* background: rgba(0,255,255, 0.5); */
+  /* linear-gradient(45deg, , rgb(176, 196, 222, 0.8)), */
+  transition: all .3s linear;
+  margin-left: 15px;
+  /* padding-right: 15px; */
+  z-index: 1007;
+}
+.image-tint:hover:before { 
+  background: none;
+}
+
+#advanced-features .advanced-feature-img-right, .img-stretch{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+

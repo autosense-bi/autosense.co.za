@@ -11,6 +11,7 @@
     "cname": "Copy CNAME dist\\CNAME",
     "clean": "rmdir /Q /S dist && mkdir dist && npm run cname",
     "prod": "npm run clean && parcel build index.html",
+    "save-changes": "git add . && git commit -m \"changes\" && git push",
     "git-del": "git branch -D gh-pages",
     "git-split": "git subtree split --prefix dist -b gh-pages",
     "git-publish": "git push -f origin gh-pages:gh-pages",

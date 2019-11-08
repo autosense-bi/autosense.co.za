@@ -20,3 +20,6 @@ const contactform = require("./contactform/contactform.js");
 const all = require("./js/all.min.js");
 const main = require("./js/main.js");
 
+var ghpages = require('gh-pages');
+ 
+ghpages.publish('dist', function(err) {});

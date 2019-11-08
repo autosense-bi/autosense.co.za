@@ -1,9 +1,11 @@
-import animate from 'animate.css';
+import bootstrapcss from './lib/bootstrap/css/bootstrap.min.css';
+import animate from './lib/animate/animate.min.css';
+
 import $ from 'jquery';
 // const $ = require("./lib/jquery/jquery.min.js");
 window.$ = window.jQuery = $
 const jquerymigrate = require("./lib/jquery/jquery-migrate.min.js");
-import bootstrap from 'bootstrap'  ;
+const bootstrap = require('./lib/bootstrap/js/bootstrap.min.js');
 const WOW = require("./lib/wow/wow.js");
 // import WoW from 'wowjs';
 // Initiate the wowjs animation library
@@ -20,6 +22,6 @@ const contactform = require("./contactform/contactform.js");
 const all = require("./js/all.min.js");
 const main = require("./js/main.js");
 
-var ghpages = require('gh-pages');
+// var ghpages = require('gh-pages');
  
-ghpages.publish('dist', function(err) {});
+// ghpages.publish('dist', function(err) {});

@@ -812,8 +812,8 @@
                     data-msg="Please write something for us" placeholder="Message"></textarea>
                   <div class="validation"></div>
                 </div>
-                <div class="text-center"><button click="sendEmail()" title="Send Message" class="btn btn-round-outline float-right">Send Message</button></div>
-                <!-- <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div> -->
+                <div class="text-center"><button click="sendEmail()" id="btnSubmit" title="Send Message" class="btn btn-round-outline float-right">Send Message</button></div>
+                <!-- <div class="text-center"><button type="submit" id="btnSubmit" title="Send Message">Send Message</button></div> -->
               </div>
             </div>
           </div>
@@ -867,11 +867,13 @@
     //     alert("Thank you for contacting us. We will get to your email ASAP");
     //   });
     // }
-    function sendEmail(){
+    $('#btnSubmit').on('click', function(){
+      console.log("sending emails");
       var sname = $('#name').val();
       var s_replyto = $('#email').val();
       var ssubject = $('#subject').val();
       var smessage = "Name: " + name + "\n" + $('#message').val();
+      console.log(sname, s_replyto, ssubject, smessage);
       $.ajax({
         url: "https://formspree.io/xyygwbyq",
         method: "POST",
@@ -891,7 +893,7 @@
           alert("There seems to be an error. Please try again in an hour.");
         }
       });
-    };
+    });
 
   </script>
 <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5dc94df4dd32c9ff"></script>

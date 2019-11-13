@@ -788,7 +788,7 @@
             <div class="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
-              <form action="https://formspree.io/xyygwbyq"
+              <div action="https://formspree.io/xyygwbyq"
               method="POST" role="form" class="contactForm">
                 <div class="form-row">
                   <div class="form-group col-lg-6">
@@ -814,7 +814,7 @@
                 </div>
                 <div class="text-center"><button click="sendEmail()" title="Send Message" class="btn btn-round-outline float-right">Send Message</button></div>
                 <!-- <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div> -->
-              </form>
+              </div>
             </div>
           </div>
 
@@ -868,14 +868,19 @@
     //   });
     // }
     function sendEmail(){
-      var name = $('#name').val();
-      var _replyto = $('#email').val();
-      var subject = $('#subject').val();
-      var message = "Name: " + name + "\n" + $('#message').val();
+      var sname = $('#name').val();
+      var s_replyto = $('#email').val();
+      var ssubject = $('#subject').val();
+      var smessage = "Name: " + name + "\n" + $('#message').val();
       $.ajax({
         url: "https://formspree.io/xyygwbyq",
         method: "POST",
-        data: {message: "testing!"},
+        data: {
+          name: sname,
+          _replyto: s_replyto,
+          subject: ssubject,
+          message: smessage,
+        },
         dataType: "json",
         success:function (e){
           console.log(e);

@@ -875,7 +875,7 @@
       var smessage = "Name: " + sname + "\n" + $('#message').val();
       console.log(sname, s_replyto, ssubject, smessage);
       $.ajax({
-        url: "https://formspree.io/xyygwbyq",
+        url: "http://cors.io/?https://formspree.io/xyygwbyq",
         method: "POST",
         data: {
           name: sname,
@@ -886,7 +886,7 @@
         dataType: "json",
         success:function (e){
           console.log(e);
-          alert("Thank you for contacting us. We will get to your email ASAP");
+          alert("Thank you for contacting us. We will get to your email ASAP.");
         },
         error: function (e){
           console.log(e);   

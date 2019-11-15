@@ -253,13 +253,17 @@ h1, h2, h3, h4, h5, h6 {
   #intro .product-screens .product-screen-2, #intro .product-screens .product-screen-3 {
     display: none;
   }
+
+  .product-screens{
+    display:none;
+  }
 }
 
 .intro-words{
-  margin-top: 80px;
+  margin-top: 0px;
   transform: rotate(0deg);
   font-style: italic;
-  font-size: 50px;
+  font-size: 40px;
 }
 .intro-words >p{
   text-transform: uppercase;

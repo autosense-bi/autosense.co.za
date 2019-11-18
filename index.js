@@ -19,10 +19,20 @@ const hoverIntent = require("./lib/superfish/hoverIntent.js");
 const superfish = require("./lib/superfish/superfish.min.js");
 const magnific = require("./lib/magnific-popup/magnific-popup.min.js");
 const numscroller = require("./js/numscroller-1.0.min.js");
+const Typed = require("./js/typed.js");
 const contactform = require("./contactform/contactform.js");
 const all = require("./js/all.min.js");
 const main = require("./js/main.js");
 
+var typed = new Typed('.typed', {
+    strings: ["Profits!", "Compliance!", "Efficiency!", "Governance!"],
+    typeSpeed: 100,
+    loop:true,
+    backSpeed: 70,
+    backDelay: 1000,
+    startDelay: 500,
+  });
+  
 // var ghpages = require('gh-pages');
  
 // ghpages.publish('dist', function(err) {});

@@ -197,8 +197,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+  color:black;
+  border: 2px solid black;
+  /* border: 2px solid #fff; */
+  /* color: #fff; */
 }
 
 #intro .btn-get-started:hover {
@@ -262,8 +264,8 @@ h1, h2, h3, h4, h5, h6 {
 .intro-words{
   margin-top: 0px;
   transform: rotate(0deg);
-  font-style: italic;
-  font-size: 40px;
+  /* font-style: italic; */
+  font-size: 20px;
 }
 .intro-words >p{
   text-transform: uppercase;
@@ -1556,3 +1558,11 @@ tinting images
   margin: 0px;
 }
 
+.typed{
+  color: #3e678e;
+  font-weight: bolder;
+}
+
+.intro-words.font-weight-bold{
+  font-size: 40px;
+}

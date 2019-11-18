@@ -533,12 +533,24 @@ hr {
   margin-bottom: 40px;
 }
 
-.white-hr{
-  width: 400px;
-  border-bottom: solid;
-  border-bottom-width: 3px;
-  border-bottom-color: white;
-  margin-bottom: 40px;
+@media (min-width: 576px){
+  .white-hr{
+    width: 400px;
+    border-bottom: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: white;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px){
+  .white-hr{
+    width: 340px;
+    border-bottom: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: white;
+    margin-bottom: 40px;
+  }
 }
 
 /* Section with background

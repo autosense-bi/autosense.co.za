@@ -25,7 +25,7 @@ const all = require("./js/all.min.js");
 const main = require("./js/main.js");
 
 var typed = new Typed('.typed', {
-    strings: ["Profits!", "Compliance!", "Efficiency!", "Governance!"],
+    strings: ["Profits", "Compliance", "Efficiency", "Governance"],
     typeSpeed: 100,
     loop:true,
     backSpeed: 70,

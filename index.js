@@ -24,14 +24,14 @@ const contactform = require("./contactform/contactform.js");
 const all = require("./js/all.min.js");
 const main = require("./js/main.js");
 
-var typed = new Typed('.typed', {
-    strings: ["Profits", "Compliance", "Efficiency", "Governance"],
-    typeSpeed: 100,
-    loop:true,
-    backSpeed: 70,
-    backDelay: 1000,
-    startDelay: 500,
-  });
+// var typed = new Typed('.typed', {
+//     strings: ["Profits", "Compliance", "Efficiency", "Governance"],
+//     typeSpeed: 100,
+//     loop:true,
+//     backSpeed: 70,
+//     backDelay: 1000,
+//     startDelay: 500,
+//   });
   
 // var ghpages = require('gh-pages');
  

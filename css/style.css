@@ -1570,43 +1570,63 @@ tinting images
 }
 
 /*text sliding animation*/
-.content {
-	/* position: absolute; */
-	/* top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%); */
-	/* height: 160px; */
-	/* overflow: hidden;
-	font-family: 'Lato', sans-serif;*/
-	font-size: 35px;
-	line-height: 40px;
-	/* color: #ecf0f1;  */
+@media (max-width: 768px) {
+  .content {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .content__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 24px;
+    padding: 0 40px;
+  }
+
+  .content__container__list {
+    margin-top: 0;
+    padding-left: 100px;
+    text-align: left;
+    list-style: none;
+    color:#5899D3;
+    -webkit-animation-name: change;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: change;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  
 }
 
-.content__container {
-	font-weight: 600;
-	overflow: hidden;
-	height: 40px;
-	padding: 0 40px;
-}
+@media (min-width: 768px) {
 
-.content__container:before {
-	/* content: '['; */
-	left: 0;
-}
+  .content {
+    font-size: 35px;
+    line-height: 40px;
+  }
 
-.content__container:after {
-	/* content: ']'; */
-	position: absolute;
-	right: 0;
-}
+  .content__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 40px;
+  }
 
-.content__container:after, .content__container:before {
-	position: absolute;
-	top: 0;
-	/* color: #16a085; */
-	font-size: 42px;
-	line-height: 42px;
+  .content__container__list {
+    margin-top: 0;
+    padding-left: 165px;
+    text-align: left;
+    list-style: none;
+    color:#5899D3;
+    -webkit-animation-name: change;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: change;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  
 }
 
 .content__container__text {
@@ -1615,19 +1635,6 @@ tinting images
 	margin: 0;
 }
 
-.content__container__list {
-	margin-top: 0;
-	padding-left: 165px;
-	text-align: left;
-  list-style: none;
-  color:#5899D3;
-	-webkit-animation-name: change;
-	-webkit-animation-duration: 6s;
-	-webkit-animation-iteration-count: infinite;
-	animation-name: change;
-	animation-duration: 6s;
-	animation-iteration-count: infinite;
-}
 
 .content__container__list__item {
 	/* line-height: 40px; */

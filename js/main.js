@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
   // Header fixed and Back to top button
   $(window).scroll(function() {
-    if ($(this).scrollTop() > $(window).height()-85) {
+    if ($(this).scrollTop() > $(window).height()-83) {
       $('.back-to-top').fadeIn('slow');
       $('#header').addClass('header-fixed');
     } else {
@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
     }
   });
 
-  if ($(this).scrollTop() > $(window).height()-85) {
+  if ($(this).scrollTop() > $(window).height()-83) {
     $('.back-to-top').fadeIn('slow');
     $('#header').addClass('header-fixed');
   }

@@ -128,7 +128,8 @@ h1, h2, h3, h4, h5, h6 {
 #intro {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, rgba(176, 196, 222, 0.8), rgb(176, 196, 222, 0.8)), url("../img/intro-bg.jpg") center top no-repeat;
+  /* background: linear-gradient(45deg, rgba(176, 196, 222, 0.8), rgb(176, 196, 222, 0.8)), url("../img/data-bg.jpg") center top no-repeat; */
+  background:  url("../img/data-bg.jpg") center top no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -189,25 +190,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .btn-get-started {
-  /* font-family: "Open Sans", sans-serif; */
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 8px 28px;
-  border-radius: 50px;
-  transition: 0.5s;
+  padding: 12px 32px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
   margin: 10px;
-  color:black;
-  border: 2px solid black;
-  background-color: #5899D3;
-  /* border: 2px solid #fff; */
-  /* color: #fff; */
+  color: white;
+  border: none;
+  background: linear-gradient(135deg, #305275, #4b7da8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #intro .btn-get-started:hover {
-  color: #5c9cd6;
-  background: #fff;
+  color: white;
+  background: linear-gradient(135deg, #4b7da8, #305275);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 #intro .product-screens {
@@ -350,7 +351,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 8px 10px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: #3e678e;
   /* font-family: "Open Sans", sans-serif; */
   font-weight: 400;
   font-size: 14px;

@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-fixed {
-  /* background: linear-gradient(45deg, #BCCDE2, #BCCDE2); */
+   background: linear-gradient(45deg, #fff, #fff); 
   background: #fff;
   padding: 20px 0;
   height: 72px;
@@ -1591,7 +1591,7 @@ tinting images
     padding-left: 100px;
     text-align: left;
     list-style: none;
-    color:#5899D3;
+    color:#3e678e;
     -webkit-animation-name: change;
     -webkit-animation-duration: 6s;
     -webkit-animation-iteration-count: infinite;
@@ -1621,7 +1621,7 @@ tinting images
     padding-left: 165px;
     text-align: left;
     list-style: none;
-    color:#5899D3;
+    color:#3e678e;
     -webkit-animation-name: change;
     -webkit-animation-duration: 6s;
     -webkit-animation-iteration-count: infinite;

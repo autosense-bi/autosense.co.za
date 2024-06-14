@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 8px 10px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #3e678e;
+  color: #5891c2;
   /* font-family: "Open Sans", sans-serif; */
   font-weight: 400;
   font-size: 14px;
@@ -384,7 +384,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul li:hover > a {
-  color: #5891c2;
+  color: #3e678e;
 }
 
 .nav-menu ul ul {

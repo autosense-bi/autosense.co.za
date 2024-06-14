@@ -116,7 +116,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-fixed {
-  background: linear-gradient(45deg, #BCCDE2, #BCCDE2);
+  /* background: linear-gradient(45deg, #BCCDE2, #BCCDE2); */
+  background: #fff;
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
@@ -383,7 +384,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul li:hover > a {
-  color: #5c9cd6;
+  color: #5891c2;
 }
 
 .nav-menu ul ul {

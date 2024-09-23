@@ -142,10 +142,10 @@ jQuery(document).ready(function($) {
         $("#nav-menu-container").removeAttr("style");
         $("#nav-menu-container").css({'background-color':'transparent'});
         // $("#header").css({'background-color':'transparent'});
-        $("#header").css({'background-color':'#BCCDE2'});
+        $("#header").css({'background-color':'#fff'});
       }else if (x <= 3){
         $("#nav-menu-container").css({'display':'table','margin':'0 auto','float':'none', 'background-color':'transparent'});
-        $("#header").css({'background-color':'transparent'});
+        $("#header").css({'background-color':'#fff'});
         // $("#header").css({'background-color':'#BCCDE2'});
         $("#header-logo").hide();
       } 

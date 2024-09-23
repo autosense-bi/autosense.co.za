@@ -42,7 +42,7 @@
   <!-- Main Stylesheet File -->
   <!-- <link href="./css/style.css" rel="stylesheet"> -->
   <link href="./css/all.min.css" rel="stylesheet">
-  
+
   <!-- =======================================================
     Theme Name: <b classs="AutoSenseBlue">Auto</b>Sense
     Theme URL: https://bootstrapmade.com/<b classs="AutoSenseBlue">Auto</b>Sense-bootstrap-landing-page-template/
@@ -53,54 +53,44 @@
 </head>
 
 <body>
-
-  <!-- <div class="icon-bar">
-    <a href="https://www.facebook.com/sharer.php?s=100&p[url]=AutoSense.co.za&p[title]=AutoSense%20Business%20Intelligence" class="facebook"><i class="fab fa-facebook-f"></i></a> 
-    <a href="https://twitter.com/share?text=AutoSense%20Business%20Intelligence&hashtags=AutoSense" class="twitter"><i class="fab fa-twitter"></i></a> 
-    <a href="https://plus.google.com/share?url=AutoSense.co.za" class="google"><i class="fab fa-google"></i></a> 
-    <a href="http://www.linkedin.com/shareArticle?url=AutoSense.co.za&title=AutoSense%20Business%20Intelligence" class="linkedin"><i class="fab fa-linkedin"></i></a>
-  </div> -->
-
-  <!--==========================
-    Header
-  ============================-->
-  <header id="header" style="margin-top:-90px">
+  <header id="header">
     <div class="container">
-
-      <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto"><img id="header-logo" src="./img/AutoSense know your data.png"
-              style="max-width:250px;height:50px;display:none" alt="AutoSense Business Intelligence Logo" /></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#intro"><img src="./img/logo.png" alt="" title=""></a> -->
-      </div>
-
-      <nav id="nav-menu-container" class="wow fadeInUp" style="display:table;margin:0 auto;float:none">
-        <ul class="nav-menu">
-          <li><a href="#intro"><i class="fas fa-home"></i> - BI Home</a></li>
-          <li><a href="#features"><i class="fas fa-info-circle"></i> - About Us</a></li>
-          <li><a href="#about"><i class="fas fa-wrench"></i> - Services</a></li>
-          <li><a href="#contact"><i class="fas fa-phone"></i> - Contact Us</a></li>
-        </ul>
-      </nav><!-- #nav-menu-container -->
+        <div id="logo" class="hidden-logo">
+            <a href="#intro" class="scrollto">
+                <img id="header-logo" src="./img/AutoSense know your data.png" alt="AutoSense Business Intelligence Logo">
+            </a>
+        </div>
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li><a href="#intro"><i class="fas fa-home"></i> BI Home</a></li>
+                <li><a href="#features"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="#about"><i class="fas fa-wrench"></i> Services</a></li>
+                <li><a href="#contact"><i class="fas fa-phone"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
     </div>
-  </header><!-- #header -->
+</header>
 
-  <!--==========================
+
+<!--==========================
     Intro Section
   ============================-->
   <section id="intro">
 
     <div class="intro-text wow fadeInUp">
+      <img id="intrologo" src="./img/AutoSense Logo Know your data.svg" class="img img-fluid" style="max-width:600px;max-height:700px;margin-top:115px"
+      alt="AutoSense Business Intelligence Logo" />
       <h1 class="intro-words">
-          <img id="logo" src="./img/AutoSense Logo Know your data.svg" class="img img-fluid" style="max-width:600px;max-height:700px;margin-top:115px"
-          alt="AutoSense Business Intelligence Logo" />
+
         <!-- <hr class="white-hr"/> -->
         <p class="mt-3">Automotive Data Integration,<br/> Warehousing & Business Intelligence</p>
-        <hr class="white-hr">
       </h1>
-
+      <!--<div id="logofadehere"></div>
       <div class="intro-words font-weight-bold ">
-          <p class="mb-0">Improving Decisions  </p>
+          <p class="mb-0">Improving Decisions to Drive </p>
       </div>
       <div class=" content ml-0">
           <div class="content__container">
@@ -116,9 +106,10 @@
               <li class="content__container__list__item">Governance</li>
             </ul>
           </div>
-      </div>
+      </div>-->
     </div>
-
+    
+    
     <!-- <div class="product-screens">
 
       <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">
@@ -135,11 +126,10 @@
 
     </div> -->
     <div class="text-center d-flex flex-column h-100 pb-3 wow FadeInUp">
-        <a href="#features" class="mt-auto ml-auto mr-auto btn-get-started scrollto">Read More<br/> <i class="fas fa-caret-down"></i></span></a>
-    </div>
-  </section><!-- #intro -->
-
+      <a href="#features" class="mt-auto ml-auto mr-auto btn-modern scrollto">Read More <br/><i class="fas fa-caret-down"></i></a>
+  </div>
   
+  </section><!-- #intro -->
 
   <main id="main">
 
@@ -147,10 +137,9 @@
       Product Features Section
     ============================-->
     <section id="features" class="section-bg">
-        <div class="container">
+        <div class="container" id="improvedecisions" style="padding-top: 25px;">
   
           <div class="row">
-  
             <div class="col-lg-12">
               <div class="section-header wow fadeIn" data-wow-duration="1s">
                 <h3 class="section-title">Value Proposition</h3>
@@ -260,7 +249,7 @@
       About Us Section
     ============================-->
     <section id="about">
-      <div class="container">
+      <div class="container"  style="padding-top: 25px;">
         <div class="section-header">
           <h3 class="section-title">Business Intelligence Consulting</h3>
           <hr />
@@ -737,7 +726,7 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <script src="./index.js"></script>
-  
+
   <script>
     // function sendEmail(){
     //   $('.contactForm').submit().error(function(){
